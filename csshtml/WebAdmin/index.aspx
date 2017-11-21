@@ -36,8 +36,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="agileits-top">
                     <form action="#" method="post" runat="server">
                         <i class="fa fa-user-o" aria-hidden="true"></i>
-                        <asp:TextBox ID="username" runat="server"></asp:TextBox>
-                        <asp:TextBox ID="passsword" runat="server" TextMode="Password"></asp:TextBox>
+                        <table>
+                            <tr>
+                                <td>Username</td>
+                                <td>:</td>
+                                <td>
+                                    <asp:TextBox ID="username" runat="server"></asp:TextBox>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td>
+                                    <asp:TextBox ID="passsword" runat="server" TextMode="Password"></asp:TextBox>
+                                </td>
+                            </tr>
+                        </table>
                         <div class="wthree-text">
                             <!--<label class="anim">
                                 <input type="checkbox" class="checkbox" required="">
