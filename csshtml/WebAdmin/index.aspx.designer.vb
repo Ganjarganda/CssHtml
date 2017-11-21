@@ -12,4 +12,22 @@ Option Explicit On
 
 
 Partial Public Class index
+    
+    '''<summary>
+    '''username control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents username As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''passsword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents passsword As Global.System.Web.UI.WebControls.TextBox
 End Class

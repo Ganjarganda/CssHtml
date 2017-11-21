@@ -31,15 +31,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- main -->
     <div data-vide-bg="/Assets/videoadmin/awesome">
         <div class="main-w3layouts center-container">
-            <h1>Awesome Register Form</h1>
+            <h1>CSSHTML - Admin Login</h1>
             <div class="main-agileinfo">
                 <div class="agileits-top">
-                    <form action="#" method="post">
+                    <form action="#" method="post" runat="server">
                         <i class="fa fa-user-o" aria-hidden="true"></i>
-                        <input class="text" type="text" name="Username" placeholder="Username" required="">
-                        <input class="text email" type="email" name="email" placeholder="Email" required="">
-                        <input class="text" type="password" name="password" placeholder="Password" required="">
-                        <input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+                        <asp:TextBox ID="username" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="passsword" runat="server" TextMode="Password"></asp:TextBox>
                         <div class="wthree-text">
                             <!--<label class="anim">
                                 <input type="checkbox" class="checkbox" required="">

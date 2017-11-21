@@ -175,7 +175,6 @@
     <Content Include="Assets\videoadmin\awesome.mp4" />
     <Content Include="Assets\videoadmin\awesome.png" />
     <Content Include="WebAdmin\index.aspx" />
-    <Content Include="WebAdmin\index.html" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
