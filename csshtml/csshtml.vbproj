@@ -175,6 +175,7 @@
     <Content Include="Assets\videoadmin\awesome.mp4" />
     <Content Include="Assets\videoadmin\awesome.png" />
     <Content Include="WebAdmin\index.aspx" />
+    <Content Include="WebAdmin\testlogin.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -279,6 +280,13 @@
     </Compile>
     <Compile Include="WebAdmin\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebAdmin\testlogin.aspx.designer.vb">
+      <DependentUpon>testlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebAdmin\testlogin.aspx.vb">
+      <DependentUpon>testlogin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

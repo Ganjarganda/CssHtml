@@ -1,4 +1,4 @@
-﻿<!--
+﻿﻿<!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -12,7 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Login Admin | CssHtml.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Awesome Register Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript">
@@ -23,8 +23,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link href="/Content/cssadmin/style.css" rel="stylesheet" type="text/css" media="all" />
     <!-- //Custom Theme files -->
     <!-- web font -->
-    <link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet" />
     <!-- //web font -->
 </head>
 <body>
@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h1>CSSHTML - Admin Login</h1>
             <div class="main-agileinfo">
                 <div class="agileits-top">
-                    <form action="#" method="post" runat="server">
+                    <form id="formlogin" method="post" runat="server">
                         <i class="fa fa-user-o" aria-hidden="true"></i>
                         <table>
                             <tr>
@@ -42,13 +42,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <td>:</td>
                                 <td>
                                     <asp:TextBox ID="username" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="Requ_username" runat="server" ControlToValidate="username" ErrorMessage="Username Kosong"></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Password</td>
                                 <td>:</td>
                                 <td>
-                                    <asp:TextBox ID="passsword" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="password" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="Requ_password" runat="server" ControlToValidate="password" ErrorMessage="Password Kosong"></asp:RequiredFieldValidator>
                                 </td>
                             </tr>
                         </table>
@@ -59,7 +61,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </label>-->
                             <div class="clear"></div>
                         </div>
-                        <input type="submit" value="REGISTER">
+                        <!--<input type="submit" value="REGISTER">-->
+                        <asp:Button ID="login" runat="server" Text="LOGIN" />
                     </form>
                 </div>
             </div>

@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class index
     
     '''<summary>
+    '''formlogin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents formlogin As Global.System.Web.UI.HtmlControls.HtmlForm
+    
+    '''<summary>
     '''username control.
     '''</summary>
     '''<remarks>
@@ -23,11 +32,38 @@ Partial Public Class index
     Protected WithEvents username As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''passsword control.
+    '''Requ_username control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents passsword As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Requ_username As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
+    '''password control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents password As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Requ_password control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Requ_password As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
+    '''login control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents login As Global.System.Web.UI.WebControls.Button
 End Class
