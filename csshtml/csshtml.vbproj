@@ -153,14 +153,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Assets\imagesadmin\1.jpg" />
+    <Content Include="Admin_CSSHTML\Berandaadmin.aspx" />
+    <Content Include="Admin_CSSHTML\index.aspx" />
+    <Content Include="Assets\imagesadmin\a1.jpg" />
+    <Content Include="Assets\imagesadmin\a2.jpg" />
+    <Content Include="Assets\imagesadmin\a3.jpg" />
+    <Content Include="Assets\imagesadmin\a4.jpg" />
+    <Content Include="Assets\imagesadmin\admin.jpg" />
+    <Content Include="Assets\imagesadmin\bottom.jpg" />
+    <Content Include="Assets\imagesadmin\overlay.png" />
+    <Content Include="Assets\imagesadmin\pic.jpg" />
+    <Content Include="Assets\imagesadmin\pic1.jpg" />
+    <Content Include="Assets\imagesadmin\profile.jpg" />
+    <Content Include="Assets\imagesadmin\profile_bg.jpg" />
+    <Content Include="Assets\imagesadmin\progress.jpg" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cssadmin\basictable.css" />
+    <Content Include="Content\cssadmin\bootstrap.css" />
+    <Content Include="Content\cssadmin\circles.css" />
+    <Content Include="Content\cssadmin\component.css" />
+    <Content Include="Content\cssadmin\export.css" />
+    <Content Include="Content\cssadmin\flipclock.css" />
+    <Content Include="Content\cssadmin\font-awesome.css" />
+    <Content Include="Content\cssadmin\jQuery-plugin-progressbar1.css" />
+    <Content Include="Content\cssadmin\monthly.css" />
     <Content Include="Content\cssadmin\style.css" />
+    <Content Include="Content\cssadmin\style_grid.css" />
+    <Content Include="Content\cssadmin\table-style.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontsadmin\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -169,18 +195,51 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\jsadmin\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jsadmin\jquery.vide.min.js" />
-    <Content Include="Assets\videoadmin\awesome.JPG" />
-    <Content Include="Assets\videoadmin\awesome.mp4" />
-    <Content Include="Assets\videoadmin\awesome.png" />
-    <Content Include="WebAdmin\index.aspx" />
-    <Content Include="WebAdmin\testlogin.aspx" />
+    <Content Include="fonts\fontsadmin\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontsadmin\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontsadmin\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontsadmin\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontsadmin\FontAwesome.otf" />
+    <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\imagesadmin\Thumbs.db" />
+    <Content Include="Admin_CSSHTML\Masteradmin.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jsadmin\amcharts.js" />
+    <Content Include="Scripts\jsadmin\bars.js" />
+    <Content Include="Scripts\jsadmin\bootstrap-3.1.1.min.js" />
+    <Content Include="Scripts\jsadmin\Chart.min.js" />
+    <Content Include="Scripts\jsadmin\circles.js" />
+    <Content Include="Scripts\jsadmin\classie.js" />
+    <Content Include="Scripts\jsadmin\contact_me.js" />
+    <Content Include="Scripts\jsadmin\export.js" />
+    <Content Include="Scripts\jsadmin\flipclock.js" />
+    <Content Include="Scripts\jsadmin\gauge.js" />
+    <Content Include="Scripts\jsadmin\gnmenu.js" />
+    <Content Include="Scripts\jsadmin\jqBootstrapValidation.js" />
+    <Content Include="Scripts\jsadmin\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\jsadmin\jQuery-plugin-progressbar.js" />
+    <Content Include="Scripts\jsadmin\jquery.basictable.min.js" />
+    <Content Include="Scripts\jsadmin\jquery.nicescroll.js" />
+    <Content Include="Scripts\jsadmin\light.js" />
+    <Content Include="Scripts\jsadmin\modernizr.custom.js" />
+    <Content Include="Scripts\jsadmin\monthly.js" />
+    <Content Include="Scripts\jsadmin\pie.js" />
+    <Content Include="Scripts\jsadmin\prettymaps.js" />
+    <Content Include="Scripts\jsadmin\radar.js" />
+    <Content Include="Scripts\jsadmin\screenfull.js" />
+    <Content Include="Scripts\jsadmin\scripts.js" />
+    <Content Include="Scripts\jsadmin\serial.js" />
+    <Content Include="Scripts\jsadmin\skycons.js" />
+    <Content Include="Scripts\jsadmin\valida.2.1.6.min.js" />
+    <Content Include="Scripts\jsadmin\validator.min.js" />
+    <Content Include="Scripts\jsadmin\xy.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -209,6 +268,27 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_CSSHTML\Berandaadmin.aspx.designer.vb">
+      <DependentUpon>Berandaadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\Berandaadmin.aspx.vb">
+      <DependentUpon>Berandaadmin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\Masteradmin.Master.designer.vb">
+      <DependentUpon>Masteradmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\Masteradmin.Master.vb">
+      <DependentUpon>Masteradmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="About.aspx.designer.vb">
@@ -275,20 +355,6 @@
     <Compile Include="Site.Mobile.Master.designer.vb">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebAdmin\index.aspx.designer.vb">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebAdmin\index.aspx.vb">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="WebAdmin\testlogin.aspx.designer.vb">
-      <DependentUpon>testlogin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebAdmin\testlogin.aspx.vb">
-      <DependentUpon>testlogin.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -313,6 +379,7 @@
     <Content Include="ViewSwitcher.ascx" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Scripts\jsadmin\js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
