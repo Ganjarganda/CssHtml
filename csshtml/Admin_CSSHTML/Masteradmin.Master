@@ -10,6 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <html lang="zxx">
 <head runat="server">
+    <!-- Logo -->
+    <link rel="icon" href="">
     <title>CSSHTML.com</title>
         <!-- custom-theme -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin_CSSHTML/murid.aspx">
                                         <i class="fa fa-users"></i>Murid
                                     </asp:HyperLink>
                                 </li>

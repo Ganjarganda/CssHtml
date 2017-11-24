@@ -155,6 +155,7 @@
     <Content Include="About.aspx" />
     <Content Include="Admin_CSSHTML\Berandaadmin.aspx" />
     <Content Include="Admin_CSSHTML\index.aspx" />
+    <Content Include="Admin_CSSHTML\murid.aspx" />
     <Content Include="Assets\imagesadmin\a1.jpg" />
     <Content Include="Assets\imagesadmin\a2.jpg" />
     <Content Include="Assets\imagesadmin\a3.jpg" />
@@ -288,6 +289,13 @@
     <Compile Include="Admin_CSSHTML\Masteradmin.Master.vb">
       <DependentUpon>Masteradmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\murid.aspx.designer.vb">
+      <DependentUpon>murid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\murid.aspx.vb">
+      <DependentUpon>murid.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
