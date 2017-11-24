@@ -29,9 +29,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <link href="/Content/cssadmin/style_grid.css" rel="stylesheet" type="text/css" media="all" />
         <link href="/Content/cssadmin/style.css" rel="stylesheet" type="text/css" media="all" />
         <!-- font-awesome-icons -->
-        <link href="/Content/cssadmin/font-awesome.css" rel="stylesheet">
+        <link href="/Content/cssadmin/font-awesome.css" rel="stylesheet" />
         <!-- //font-awesome-icons -->
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+        <!-- Icon Font tambahan Sendiri -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
     <!-- banner -->
@@ -46,49 +48,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <nav class="gn-menu-wrapper">
                         <div class="gn-scroller scrollbar1">
                             <ul class="gn-menu agile_menu_drop">
-                                <li><a href="main-page.html"><i class="fa fa-tachometer"></i>Dashboard</a></li>
                                 <li>
-                                    <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>UI Components <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="gn-submenu">
-                                        <li class="mini_list_agile"><a href="buttons.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Buttons</a></li>
-                                        <li class="mini_list_w3"><a href="grids.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Grids</a></li>
-                                    </ul>
+                                    <asp:HyperLink ID="sidemenu_beranda" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                        <i class="fa fa-home"></i>Beranda
+                                    </asp:HyperLink>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>Forms <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="gn-submenu">
-                                        <li class="mini_list_agile"><a href="input.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Inputs</a></li>
-                                        <li class="mini_list_w3"><a href="validation.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Validation</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="table.html"><i class="fa fa-table" aria-hidden="true"></i>Tables</a></li>
-                                <li><a href="#"><i class="fa fa-list" aria-hidden="true"></i>Short Codes <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="gn-submenu">
-                                        <li class="mini_list_agile"><a href="typo.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Typography</a></li>
-                                        <li class="mini_list_w3"><a href="icons.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Icons</a></li>
-
-                                    </ul>
-                                </li>
-
-                                <li><a href="charts.html"><i class="fa fa-line-chart" aria-hidden="true"></i>Charts</a></li>
-                                <li><a href="maps.html"><i class="fa fa-map-o" aria-hidden="true"></i>Maps</a></li>
-                                <li class="page">
-                                    <a href="#"><i class="fa fa-files-o" aria-hidden="true"></i>Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="gn-submenu">
-
-                                        <li class="mini_list_agile"><a href="signin.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Sign In</a></li>
-                                        <li class="mini_list_w3"><a href="signup.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Sign Up</a></li>
-                                        <li class="mini_list_agile error"><a href="404.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Error 404 </a></li>
-
-                                        <li class="mini_list_w3_line"><a href="calendar.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Calendar</a></li>
-                                    </ul>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                        <i class="fa fa-book"></i>Materi
+                                    </asp:HyperLink>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-suitcase" aria-hidden="true"></i>More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                    <ul class="gn-submenu">
-                                        <li class="mini_list_agile"><a href="faq.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Faq</a></li>
-                                        <li class="mini_list_w3"><a href="blank.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Blank Page</a></li>
-                                    </ul>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                        <i class="fa fa-users"></i>Murid
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                        <i class="fa fa-archive"></i>Konfirmasi Calon
+                                    </asp:HyperLink>
+                                </li>
+                                <li>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                                        <i class="fa fa-sign-out"></i>Logout
+                                    </asp:HyperLink>
                                 </li>
                             </ul>
                         </div>
@@ -97,29 +80,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </li>
                 <!-- //nav_agile_w3l -->
                 <li class="second logo">
-                    <h1><a href="main-page.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Esteem </a></h1>
-                </li>
-                <li class="second admin-pic">
-                    <ul class="top_dp_agile">
-                        <li class="dropdown profile_details_drop">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <div class="profile_img">
-                                    <span class="prfil-img">
-                                        <img src="/Assets/imagesadmin/admin.jpg" alt="">
-                                    </span>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu drp-mnu">
-                                <li><a href="#"><i class="fa fa-sign-out"></i>Logout</a> </li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="second full-screen">
-                    <section class="full-top">
-                        <button id="toggle"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
-                    </section>
+                    <h1>
+                        <asp:HyperLink ID="beranda" runat="server" NavigateUrl="~/Admin_CSSHTML/Berandaadmin.aspx">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>Admin-CSSHTML.com
+                        </asp:HyperLink>
+                    </h1>
                 </li>
             </ul>
             <!-- //nav -->
@@ -366,7 +331,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="/Scripts/jsadmin/Chart.min.js"></script>
     <script src="/Scripts/jsadmin/modernizr.custom.js"></script>
 
-    <script src="js/Scripts/jsadminclassie.js"></script>
+    <script src="/Scripts/jsadmin/classie.js"></script>
     <script src="/Scripts/jsadmin/gnmenu.js"></script>
     <script>
         new gnMenu(document.getElementById('gn-menu'));
@@ -374,7 +339,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- script-for-menu -->
 
     <!-- /circle-->
-    <script type="text/javascript" src="js/circles.js"></script>
+    <script type="text/javascript" src="/Scripts/jsadmin/circles.js"></script>
     <script>
         var colors = [
             ['#ffffff', '#fd9426'], ['#ffffff', '#fc3158'], ['#ffffff', '#53d769'], ['#ffffff', '#147efb']
