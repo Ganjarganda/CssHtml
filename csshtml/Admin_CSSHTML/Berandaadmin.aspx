@@ -10,7 +10,10 @@
                     <asp:HyperLink ID="beranda_Murid" runat="server" NavigateUrl="murid.aspx">
                         <i class="fa fa-users" aria-hidden="true"></i>
                         <div class="ca-content">
-                            <h4 class="ca-main">16,808</h4>
+                            <!---->
+                            <h4 class="ca-main">
+                                <asp:Label ID="beranda_jumlah_murid" runat="server" Text="16808"></asp:Label>
+                            </h4>
                             <h3 class="ca-sub">Murid</h3>
                         </div>
                    </asp:HyperLink>
@@ -19,7 +22,9 @@
                     <asp:HyperLink ID="beranda_materi" runat="server" NavigateUrl="materi.aspx">
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <div class="ca-content">
-                            <h4 class="ca-main one">26,808</h4>
+                           <h4 class="ca-main">
+                                <asp:Label ID="Label1" runat="server" Text="16808"></asp:Label>
+                            </h4>
                             <h3 class="ca-sub one">Semua Materi</h3>
                         </div>
                     </asp:HyperLink>
@@ -28,7 +33,9 @@
                     <asp:HyperLink ID="beranda_css" runat="server" NavigateUrl="materi.aspx">
                         <i class="fa fa-css3" aria-hidden="true"></i>
                         <div class="ca-content">
-                            <h4 class="ca-main two">29,008</h4>
+                           <h4 class="ca-main">
+                                <asp:Label ID="Label2" runat="server" Text="16808"></asp:Label>
+                            </h4>
                             <h3 class="ca-sub two">Materi CSS</h3>
                         </div>
                     </asp:HyperLink>
@@ -37,7 +44,9 @@
                      <asp:HyperLink ID="beranda_html" runat="server" NavigateUrl="materi.aspx">
                         <i class="fa fa-html5" aria-hidden="true"></i>
                         <div class="ca-content">
-                            <h4 class="ca-main three">49,436</h4>
+                            <h4 class="ca-main">
+                                <asp:Label ID="Label3" runat="server" Text="16808"></asp:Label>
+                            </h4>
                             <h3 class="ca-sub three">Materi HTML</h3>
                         </div>
                     </asp:HyperLink>
@@ -46,7 +55,9 @@
                      <asp:HyperLink ID="beranda_konfirmasi" runat="server" NavigateUrl="konfirmasicalon.aspx">
                         <i class="fa fa-archive" aria-hidden="true"></i>
                         <div class="ca-content">
-                            <h4 class="ca-main four">30,808</h4>
+                            <h4 class="ca-main">
+                                <asp:Label ID="Label4" runat="server" Text="16808"></asp:Label>
+                            </h4>
                             <h3 class="ca-sub four">Konfirmasi Calon</h3>
                         </div>
                     </asp:HyperLink>
