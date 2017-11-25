@@ -37,7 +37,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- Icon Font tambahan Sendiri -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Tables -->
-    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
 </head>
 <body>
     <!-- banner -->
@@ -63,8 +66,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin_CSSHTML/murid.aspx">
-                                        <i class="fa fa-users"></i>Murid
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Admin_CSSHTML/siswa.aspx">
+                                        <i class="fa fa-users"></i>Siswa
                                     </asp:HyperLink>
                                 </li>
                                 <li>
@@ -73,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </asp:HyperLink>
                                 </li>
                                 <li>
-                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin_CSSHTML/logout.aspx">
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin_CSSHTML/index.aspx">
                                         <i class="fa fa-sign-out"></i>Logout
                                     </asp:HyperLink>
                                 </li>
@@ -102,9 +105,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </asp:ContentPlaceHolder>
         </div>
         <!-- //inner_content-->
+
     </div>
     <!-- banner -->
     <!--copy rights start here-->
+    <div class="clearfix"></div>
     <div class="copyrights">
         <p>© 2017 Esteem. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
     </div>
@@ -394,13 +399,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script>
         $(function () {
             $('#supported').text('Supported/allowed: ' + !!screenfull.enabled);
-
             if (!screenfull.enabled) {
                 return false;
             }
-
-
-
             $('#toggle').click(function () {
                 screenfull.toggle($('#container')[0]);
             });

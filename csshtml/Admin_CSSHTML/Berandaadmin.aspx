@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Admin_CSSHTML/Masteradmin.Master" CodeBehind="Berandaadmin.aspx.vb" Inherits="csshtml.Berandaadmin" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Content_isi" runat="server">
     <!-- /inner_content_w3_agile_info-->
     <div class="inner_content_w3_agile_info">
@@ -62,7 +66,6 @@
                         </div>
                     </asp:HyperLink>
                 </li>
-                <div class="clearfix"></div>
             </ul>
         </div>
     </div>

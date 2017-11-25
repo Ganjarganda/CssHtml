@@ -154,8 +154,11 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin_CSSHTML\Berandaadmin.aspx" />
+    <Content Include="Admin_CSSHTML\form\tambahSiswa.aspx" />
     <Content Include="Admin_CSSHTML\index.aspx" />
-    <Content Include="Admin_CSSHTML\murid.aspx" />
+    <Content Include="Admin_CSSHTML\konfirmasicalon.aspx" />
+    <Content Include="Admin_CSSHTML\materi.aspx" />
+    <Content Include="Admin_CSSHTML\siswa.aspx" />
     <Content Include="Assets\imagesadmin\a1.jpg" />
     <Content Include="Assets\imagesadmin\a2.jpg" />
     <Content Include="Assets\imagesadmin\a3.jpg" />
@@ -178,6 +181,7 @@
     <Content Include="Content\cssadmin\export.css" />
     <Content Include="Content\cssadmin\flipclock.css" />
     <Content Include="Content\cssadmin\font-awesome.css" />
+    <Content Include="Content\cssadmin\fortables.css" />
     <Content Include="Content\cssadmin\jQuery-plugin-progressbar1.css" />
     <Content Include="Content\cssadmin\monthly.css" />
     <Content Include="Content\cssadmin\style.css" />
@@ -276,11 +280,25 @@
       <DependentUpon>Berandaadmin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin_CSSHTML\form\tambahSiswa.aspx.designer.vb">
+      <DependentUpon>tambahSiswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\form\tambahSiswa.aspx.vb">
+      <DependentUpon>tambahSiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Admin_CSSHTML\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_CSSHTML\index.aspx.vb">
       <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\konfirmasicalon.aspx.designer.vb">
+      <DependentUpon>konfirmasicalon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\konfirmasicalon.aspx.vb">
+      <DependentUpon>konfirmasicalon.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin_CSSHTML\Masteradmin.Master.designer.vb">
@@ -290,11 +308,18 @@
       <DependentUpon>Masteradmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin_CSSHTML\murid.aspx.designer.vb">
-      <DependentUpon>murid.aspx</DependentUpon>
+    <Compile Include="Admin_CSSHTML\materi.aspx.designer.vb">
+      <DependentUpon>materi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin_CSSHTML\murid.aspx.vb">
-      <DependentUpon>murid.aspx</DependentUpon>
+    <Compile Include="Admin_CSSHTML\materi.aspx.vb">
+      <DependentUpon>materi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\siswa.aspx.designer.vb">
+      <DependentUpon>siswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\siswa.aspx.vb">
+      <DependentUpon>siswa.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />

@@ -12,5 +12,5 @@ Option Explicit On
 
 
 
-Partial Public Class murid
+Partial Public Class konfirmasicalon
 End Class
