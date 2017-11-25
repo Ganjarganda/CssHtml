@@ -11,14 +11,6 @@
         <!-- tables -->
         <div class="agile-tables">
             <div class="w3l-table-info agile_info_shadow">
-                <div class="col-md-12 text-right">
-                    <div style="margin-top: 20px; margin-bottom: 10px;">
-                        <div class="btn btn-warning">
-                            <a href="tambahSiswa.aspx"><i class="fa fa fa-plus"></i>Tambah Siswa</a>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Search Engine -->
                 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Usernames..">
                 <!-- Table -->
@@ -38,10 +30,10 @@
                         <td></td>
                         <td>
                             <div class="btn btn-warning">
-                                <a href="editSiswa.aspx"><i class="fa fa-pencil-square-o"></i></a>
+                                <a href="form/editSiswa.aspx"><i class="fa fa-pencil-square-o"></i></a>
                             </div>
                             <div class="btn btn-warning">
-                                <a href="hapusSiswa.aspx"><i class="fa fa-trash-o"></i></a>
+                                <a href="#"><i class="fa fa-trash-o"></i></a>
                             </div>
                         </td>
                     </tr>

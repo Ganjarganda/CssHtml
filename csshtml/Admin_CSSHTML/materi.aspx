@@ -14,7 +14,7 @@
                 <div class="col-md-12 text-right">
                     <div style="margin-top: 20px; margin-bottom: 10px;">
                         <div class="btn btn-warning">
-                            <a href="tambahSiswa.aspx"><i class="fa fa fa-plus"></i>Tambah Materi</a>
+                            <a href="form/tambahMateri.aspx"><i class="fa fa fa-plus"></i>Tambah Materi</a>
                         </div>
                     </div>
                 </div>
@@ -40,10 +40,10 @@
                         <td></td>
                         <td>
                             <div class="btn btn-warning">
-                                <a href="editMateri.aspx"><i class="fa fa-pencil-square-o"></i></a>
+                                <a href="form/editMateri.aspx"><i class="fa fa-pencil-square-o"></i></a>
                             </div>
                             <div class="btn btn-warning">
-                                <a href="hapusMateri.aspx"><i class="fa fa-trash-o"></i></a>
+                                <a href="#"><i class="fa fa-trash-o"></i></a>
                             </div>
                         </td>
                     </tr>

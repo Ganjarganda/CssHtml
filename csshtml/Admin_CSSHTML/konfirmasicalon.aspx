@@ -29,10 +29,10 @@
                         <td></td>
                         <td>
                             <div class="btn btn-warning">
-                                <a href="terimatSiswa.aspx"><i class="fa fa-check"></i></a>
+                                <a href="#"><i class="fa fa-check"></i></a>
                             </div>
                             <div class="btn btn-warning">
-                                <a href="batalSiswa.aspx"><i class="fa fa-ban"></i></a>
+                                <a href="#"><i class="fa fa-ban"></i></a>
                             </div>
                         </td>
                     </tr>

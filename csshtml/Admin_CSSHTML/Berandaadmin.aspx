@@ -11,7 +11,7 @@
         <div class="agile_top_w3_grids">
             <ul class="ca-menu">
                 <li>
-                    <asp:HyperLink ID="beranda_Murid" runat="server" NavigateUrl="murid.aspx">
+                    <asp:HyperLink ID="beranda_Murid" runat="server" NavigateUrl="siswa.aspx">
                         <i class="fa fa-users" aria-hidden="true"></i>
                         <div class="ca-content">
                             <!---->

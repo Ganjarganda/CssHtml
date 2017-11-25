@@ -154,7 +154,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin_CSSHTML\Berandaadmin.aspx" />
-    <Content Include="Admin_CSSHTML\form\tambahSiswa.aspx" />
+    <Content Include="Admin_CSSHTML\form\editMateri.aspx" />
+    <Content Include="Admin_CSSHTML\form\editSiswa.aspx" />
+    <Content Include="Admin_CSSHTML\form\tambahMateri.aspx" />
     <Content Include="Admin_CSSHTML\index.aspx" />
     <Content Include="Admin_CSSHTML\konfirmasicalon.aspx" />
     <Content Include="Admin_CSSHTML\materi.aspx" />
@@ -280,11 +282,25 @@
       <DependentUpon>Berandaadmin.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Admin_CSSHTML\form\tambahSiswa.aspx.designer.vb">
-      <DependentUpon>tambahSiswa.aspx</DependentUpon>
+    <Compile Include="Admin_CSSHTML\form\editMateri.aspx.designer.vb">
+      <DependentUpon>editMateri.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin_CSSHTML\form\tambahSiswa.aspx.vb">
-      <DependentUpon>tambahSiswa.aspx</DependentUpon>
+    <Compile Include="Admin_CSSHTML\form\editMateri.aspx.vb">
+      <DependentUpon>editMateri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\form\editSiswa.aspx.designer.vb">
+      <DependentUpon>editSiswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\form\editSiswa.aspx.vb">
+      <DependentUpon>editSiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\form\tambahMateri.aspx.designer.vb">
+      <DependentUpon>tambahMateri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\form\tambahMateri.aspx.vb">
+      <DependentUpon>tambahMateri.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Admin_CSSHTML\index.aspx.designer.vb">
