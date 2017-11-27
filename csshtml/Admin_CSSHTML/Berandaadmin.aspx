@@ -18,7 +18,7 @@
                             <h4 class="ca-main">
                                 <asp:Label ID="beranda_jumlah_murid" runat="server" Text="16808"></asp:Label>
                             </h4>
-                            <h3 class="ca-sub">Murid</h3>
+                            <h3 class="ca-sub">Siswa</h3>
                         </div>
                    </asp:HyperLink>
                 </li>
