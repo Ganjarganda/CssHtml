@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
 <head runat="server">
-    <title>CSSHTML.com | Admin Login</title>
+    <title>CSSHTML.com | Admin Login1</title>
     <!-- custom-theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
