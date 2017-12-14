@@ -161,6 +161,11 @@
     <Content Include="Admin_CSSHTML\konfirmasicalon.aspx" />
     <Content Include="Admin_CSSHTML\materi.aspx" />
     <Content Include="Admin_CSSHTML\siswa.aspx" />
+    <Content Include="Assets\chat\css\chat.css" />
+    <Content Include="Assets\chat\css\screen.css" />
+    <Content Include="Assets\chat\css\screen_ie.css" />
+    <Content Include="Assets\chat\js\chat.js" />
+    <Content Include="Assets\chat\js\jquery.js" />
     <Content Include="Assets\imagesadmin\a1.jpg" />
     <Content Include="Assets\imagesadmin\a2.jpg" />
     <Content Include="Assets\imagesadmin\a3.jpg" />
@@ -173,6 +178,54 @@
     <Content Include="Assets\imagesadmin\profile.jpg" />
     <Content Include="Assets\imagesadmin\profile_bg.jpg" />
     <Content Include="Assets\imagesadmin\progress.jpg" />
+    <Content Include="Assets\imagesuser\1.jpg" />
+    <Content Include="Assets\imagesuser\1.png" />
+    <Content Include="Assets\imagesuser\10.jpg" />
+    <Content Include="Assets\imagesuser\11.jpg" />
+    <Content Include="Assets\imagesuser\12.jpg" />
+    <Content Include="Assets\imagesuser\13.jpg" />
+    <Content Include="Assets\imagesuser\14.jpg" />
+    <Content Include="Assets\imagesuser\15.jpg" />
+    <Content Include="Assets\imagesuser\16.jpg" />
+    <Content Include="Assets\imagesuser\17.jpg" />
+    <Content Include="Assets\imagesuser\18.jpg" />
+    <Content Include="Assets\imagesuser\19.jpg" />
+    <Content Include="Assets\imagesuser\2.jpg" />
+    <Content Include="Assets\imagesuser\2.png" />
+    <Content Include="Assets\imagesuser\20.jpg" />
+    <Content Include="Assets\imagesuser\21.jpg" />
+    <Content Include="Assets\imagesuser\22.jpg" />
+    <Content Include="Assets\imagesuser\23.jpg" />
+    <Content Include="Assets\imagesuser\24.jpg" />
+    <Content Include="Assets\imagesuser\25.jpg" />
+    <Content Include="Assets\imagesuser\26.jpg" />
+    <Content Include="Assets\imagesuser\3.jpg" />
+    <Content Include="Assets\imagesuser\3.png" />
+    <Content Include="Assets\imagesuser\32.png" />
+    <Content Include="Assets\imagesuser\4.jpg" />
+    <Content Include="Assets\imagesuser\5.jpg" />
+    <Content Include="Assets\imagesuser\6.jpg" />
+    <Content Include="Assets\imagesuser\7.jpg" />
+    <Content Include="Assets\imagesuser\8.jpg" />
+    <Content Include="Assets\imagesuser\9.jpg" />
+    <Content Include="Assets\imagesuser\back.jpg" />
+    <Content Include="Assets\imagesuser\bg.jpg" />
+    <Content Include="Assets\imagesuser\close1.png" />
+    <Content Include="Assets\imagesuser\codingcss.JPG" />
+    <Content Include="Assets\imagesuser\codinghtml.JPG" />
+    <Content Include="Assets\imagesuser\css.jpg" />
+    <Content Include="Assets\imagesuser\dott.png" />
+    <Content Include="Assets\imagesuser\dott1.png" />
+    <Content Include="Assets\imagesuser\hasilcss.JPG" />
+    <Content Include="Assets\imagesuser\hasilhtml.JPG" />
+    <Content Include="Assets\imagesuser\html.jpg" />
+    <Content Include="Assets\imagesuser\icon1.png" />
+    <Content Include="Assets\imagesuser\img-sp.png" />
+    <Content Include="Assets\imagesuser\left-arrow.png" />
+    <Content Include="Assets\imagesuser\left.png" />
+    <Content Include="Assets\imagesuser\leftw.png" />
+    <Content Include="Assets\imagesuser\right.png" />
+    <Content Include="Assets\imagesuser\rightw.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -189,11 +242,22 @@
     <Content Include="Content\cssadmin\style.css" />
     <Content Include="Content\cssadmin\style_grid.css" />
     <Content Include="Content\cssadmin\table-style.css" />
+    <Content Include="Content\csscompiler\bootstrap.min.css" />
+    <Content Include="Content\csscompiler\dashboard.css" />
+    <Content Include="Content\csscompiler\main.css" />
+    <Content Include="Content\cssuser\bootstrap.css" />
+    <Content Include="Content\cssuser\chocolat.css" />
+    <Content Include="Content\cssuser\coding.css" />
+    <Content Include="Content\cssuser\font-awesome.min.css" />
+    <Content Include="Content\cssuser\popuo-box.css" />
+    <Content Include="Content\cssuser\style.css" />
+    <Content Include="Content\cssuser\styleform.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontsadmin\fontawesome-webfont.svg" />
     <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\fontsuser\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -213,7 +277,25 @@
     <Content Include="fonts\fontsadmin\glyphicons-halflings-regular.woff2" />
     <Content Include="Assets\imagesadmin\Thumbs.db" />
     <Content Include="Admin_CSSHTML\Masteradmin.Master" />
+    <Content Include="fonts\fontsuser\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontsuser\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontsuser\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontsuser\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontsuser\FontAwesome.otf" />
+    <Content Include="fonts\fontsuser\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\fontsuser\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\fontsuser\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\fontsuser\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="MEMBER_CSSHTML\cssMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\cssMember1.aspx" />
+    <Content Include="MEMBER_CSSHTML\htmlMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\htmlMember1.aspx" />
+    <Content Include="MEMBER_CSSHTML\indexMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\kontakMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\materiMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\privateMember.aspx" />
+    <Content Include="MEMBER_CSSHTML\regulerMember.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -271,6 +353,18 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="USER_CSSHTML\compiler.aspx" />
+    <Content Include="USER_CSSHTML\css1.aspx" />
+    <Content Include="USER_CSSHTML\cssUser.aspx" />
+    <Content Include="USER_CSSHTML\DaftarMember.aspx" />
+    <Content Include="USER_CSSHTML\html1.aspx" />
+    <Content Include="USER_CSSHTML\htmlUser.aspx" />
+    <Content Include="USER_CSSHTML\indexUser.aspx" />
+    <Content Include="USER_CSSHTML\kontak.aspx" />
+    <Content Include="USER_CSSHTML\LoginMember.aspx" />
+    <Content Include="USER_CSSHTML\materiUser.aspx" />
+    <Content Include="USER_CSSHTML\privateUser.aspx" />
+    <Content Include="USER_CSSHTML\regulerUser.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -390,6 +484,20 @@
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="USER_CSSHTML\indexUser.aspx.designer.vb">
+      <DependentUpon>indexUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CSSHTML\indexUser.aspx.vb">
+      <DependentUpon>indexUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER_CSSHTML\UserMaster.Master.designer.vb">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USER_CSSHTML\UserMaster.Master.vb">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -429,6 +537,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Scripts\jsadmin\js" />
+    <Content Include="USER_CSSHTML\FormUserMember.master" />
+    <Content Include="USER_CSSHTML\MemberMaster.master" />
+    <Content Include="USER_CSSHTML\UserMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

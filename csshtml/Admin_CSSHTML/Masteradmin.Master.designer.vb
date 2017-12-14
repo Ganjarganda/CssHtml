@@ -84,4 +84,13 @@ Partial Public Class Masteradmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Content_isi As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    
+    '''<summary>
+    '''bawah control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents bawah As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

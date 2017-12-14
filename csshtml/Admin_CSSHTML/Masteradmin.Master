@@ -38,6 +38,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Tables -->
 
+   
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -107,12 +109,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- //inner_content-->
 
     </div>
+    
     <!-- banner -->
     <!--copy rights start here-->
     <div class="clearfix"></div>
     <div class="copyrights">
         <p>© 2017 Esteem. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
     </div>
+   
     <!--copy rights end here-->
     <!-- js -->
     <script type="text/javascript" src="/Scripts/jsadmin/jquery-2.1.4.min.js"></script>
@@ -425,5 +429,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     <script type="text/javascript" src="/Scripts/jsadmin/bootstrap-3.1.1.min.js"></script>
 
+   
+    <asp:ContentPlaceHolder ID="bawah" runat="server">
+
+    </asp:ContentPlaceHolder>
 </body>
 </html>

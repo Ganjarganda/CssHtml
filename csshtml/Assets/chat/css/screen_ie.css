@@ -1,0 +1,23 @@
+﻿@charset "utf-8";
+/*
+ * CSS Document
+ * Written by Ryan Yonzon
+ * http://ryan.rawswift.com/
+ */
+ 
+/*
+ * IE hack 
+ */
+/*
+html, body {
+	margin:0px;
+	overflow:hidden;
+	height:100%;
+    }
+*/
+#main_container {
+    /*width: 100%;*/ /* make sure we'll use 100% of page's width */
+    background-color: #ffffff; 
+    /*overflow-x: hidden;
+    overflow-y: scroll;*/
+}

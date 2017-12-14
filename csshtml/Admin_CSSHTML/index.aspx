@@ -58,6 +58,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!-- //inner_content-->
         </div>
     </div>
+    
     <!-- banner -->
     <!--copy rights start here-->
     <div class="copyrights">
@@ -170,3 +171,5 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="text/javascript" src="/Scripts/jsadmin/bootstrap-3.1.1.min.js"></script>
 </body>
 </html>
+
+

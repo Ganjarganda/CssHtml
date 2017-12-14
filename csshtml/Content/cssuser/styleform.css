@@ -1,0 +1,70 @@
+﻿body {
+    background:url('../../Assets/imagesuser/bg.jpg') no-repeat -11px -16px;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.form h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.form p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.form table {
+    background-color: #000080;
+    align-content: center;
+    color: white;
+    margin-left: 420px;
+    padding: 20px;
+}
+
+.form table tr td {
+    padding-right: 5px;
+}
+
+.form h5 {
+    text-align: center;
+}
+
+
+
+
+
+
+.form2 {
+    margin-top: 40px;
+}
+
+.form2 h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.form2 p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.form2 table {
+    background-color: #000080;
+    align-content: center;
+    color: white;
+    margin-left: 490px;
+    padding: 20px;
+}
+
+.form2 table tr td {
+    padding-right: 5px;
+}
+
+.form2 h5 {
+    text-align: center;
+}
