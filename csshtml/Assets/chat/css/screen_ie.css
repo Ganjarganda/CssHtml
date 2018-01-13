@@ -16,8 +16,8 @@ html, body {
     }
 */
 #main_container {
-    /*width: 100%;*/ /* make sure we'll use 100% of page's width */
-    background-color: #ffffff; 
+    width: 100%; /* make sure we'll use 100% of page's width */
+    /*background-color: #ffffff;*/ 
     /*overflow-x: hidden;
     overflow-y: scroll;*/
 }
