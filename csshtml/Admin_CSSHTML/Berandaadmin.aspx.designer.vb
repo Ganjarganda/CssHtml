@@ -23,13 +23,13 @@ Partial Public Class Berandaadmin
     Protected WithEvents beranda_Murid As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''beranda_jumlah_murid control.
+    '''beranda_jumlah_siswa control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents beranda_jumlah_murid As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents beranda_jumlah_siswa As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''beranda_materi control.
@@ -41,13 +41,13 @@ Partial Public Class Berandaadmin
     Protected WithEvents beranda_materi As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''Label1 control.
+    '''beranda_jumlah_materi control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents beranda_jumlah_materi As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''beranda_css control.
@@ -59,13 +59,13 @@ Partial Public Class Berandaadmin
     Protected WithEvents beranda_css As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''Label2 control.
+    '''beranda_jumlah_css control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents beranda_jumlah_css As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''beranda_html control.
@@ -77,13 +77,13 @@ Partial Public Class Berandaadmin
     Protected WithEvents beranda_html As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''Label3 control.
+    '''beranda_jumlah_html control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents beranda_jumlah_html As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''beranda_konfirmasi control.
@@ -95,11 +95,11 @@ Partial Public Class Berandaadmin
     Protected WithEvents beranda_konfirmasi As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''Label4 control.
+    '''beranda_jumlah_konfirmasi control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents beranda_jumlah_konfirmasi As Global.System.Web.UI.WebControls.Label
 End Class

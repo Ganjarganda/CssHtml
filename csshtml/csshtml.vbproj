@@ -290,6 +290,17 @@
     <Content Include="fonts\fontsuser\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\fontsuser\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\fontsuser\glyphicons-halflings-regular.woff2" />
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -416,6 +427,11 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\viewCss.vb" />
+    <Compile Include="App_Start\viewHTML.vb" />
+    <Compile Include="App_Start\viewKonfirmasi.vb" />
+    <Compile Include="App_Start\viewMateri.vb" />
+    <Compile Include="App_Start\viewSiswa.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="About.aspx.designer.vb">
       <DependentUpon>About.aspx</DependentUpon>
@@ -430,6 +446,11 @@
     <Compile Include="Contact.aspx.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>

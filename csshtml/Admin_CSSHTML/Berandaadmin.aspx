@@ -21,7 +21,7 @@
                         <div class="ca-content">
                             <!---->
                             <h4 class="ca-main">
-                                <asp:Label ID="beranda_jumlah_murid" runat="server" Text="16808"></asp:Label>
+                                <asp:Label ID="beranda_jumlah_siswa" runat="server" Text=""></asp:Label>
                             </h4>
                             <h3 class="ca-sub">Siswa</h3>
                         </div>
@@ -32,7 +32,7 @@
                         <i class="fa fa-book" aria-hidden="true"></i>
                         <div class="ca-content">
                            <h4 class="ca-main">
-                                <asp:Label ID="Label1" runat="server" Text="16808"></asp:Label>
+                                <asp:Label ID="beranda_jumlah_materi" runat="server" Text="16808"></asp:Label>
                             </h4>
                             <h3 class="ca-sub one">Semua Materi</h3>
                         </div>
@@ -43,7 +43,7 @@
                         <i class="fa fa-css3" aria-hidden="true"></i>
                         <div class="ca-content">
                            <h4 class="ca-main">
-                                <asp:Label ID="Label2" runat="server" Text="16808"></asp:Label>
+                                <asp:Label ID="beranda_jumlah_css" runat="server" Text="16808"></asp:Label>
                             </h4>
                             <h3 class="ca-sub two">Materi CSS</h3>
                         </div>
@@ -54,7 +54,7 @@
                         <i class="fa fa-html5" aria-hidden="true"></i>
                         <div class="ca-content">
                             <h4 class="ca-main">
-                                <asp:Label ID="Label3" runat="server" Text="16808"></asp:Label>
+                                <asp:Label ID="beranda_jumlah_html" runat="server" Text="16808"></asp:Label>
                             </h4>
                             <h3 class="ca-sub three">Materi HTML</h3>
                         </div>
@@ -65,7 +65,7 @@
                         <i class="fa fa-archive" aria-hidden="true"></i>
                         <div class="ca-content">
                             <h4 class="ca-main">
-                                <asp:Label ID="Label4" runat="server" Text="16808"></asp:Label>
+                                <asp:Label ID="beranda_jumlah_konfirmasi" runat="server" Text="16808"></asp:Label>
                             </h4>
                             <h3 class="ca-sub four">Konfirmasi Calon</h3>
                         </div>
