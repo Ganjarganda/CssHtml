@@ -95,13 +95,13 @@ Partial Public Class tambahSiswa
     Protected WithEvents RequiredFieldValidator3 As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
-    '''uploadgambarMateri control.
+    '''uploadMateri control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents uploadgambarMateri As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents uploadMateri As Global.System.Web.UI.WebControls.FileUpload
     
     '''<summary>
     '''btn_TambahMateri control.
@@ -111,4 +111,13 @@ Partial Public Class tambahSiswa
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btn_TambahMateri As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''info control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents info As Global.System.Web.UI.WebControls.Label
 End Class

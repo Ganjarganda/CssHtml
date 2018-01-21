@@ -69,7 +69,7 @@
                     <div class="form-group">
                         <label for="focusedinput" class="col-sm-2 control-label">Upload Gambar Depan</label>
                         <div class="col-sm-8">
-                                <asp:FileUpload ID="uploadgambarMateri" runat="server" />
+                                <asp:FileUpload ID="uploadMateri" runat="server" />
                         </div>
                         <div class="col-sm-2">
                             <p class="help-block">
@@ -88,6 +88,29 @@
                             </p>
                         </div>
                     </div>
+                    <asp:Label ID="info" runat="server" Text=""></asp:Label>
+                    <%--<asp:SqlDataSource ID="SqlTambahMateri" runat="server" ConnectionString="<%$ ConnectionStrings:csshtml %>" DeleteCommand="DELETE FROM [materi] WHERE [id_materi] = @id_materi" InsertCommand="INSERT INTO [materi] ([judul_materi], [tanggal_input], [jenis_bahasa], [penjelasan_materi], [contoh_code], [cover_materi]) VALUES (@judul_materi, @tanggal_input, @jenis_bahasa, @penjelasan_materi, @contoh_code, @cover_materi)" SelectCommand="SELECT * FROM [materi]" UpdateCommand="UPDATE [materi] SET [judul_materi] = @judul_materi, [tanggal_input] = @tanggal_input, [jenis_bahasa] = @jenis_bahasa, [penjelasan_materi] = @penjelasan_materi, [contoh_code] = @contoh_code, [cover_materi] = @cover_materi WHERE [id_materi] = @id_materi">
+                        <DeleteParameters>
+                            <asp:Parameter Name="id_materi" Type="Int32" />
+                        </DeleteParameters>
+                        <InsertParameters>
+                            <asp:ControlParameter ControlID="judulmateri" Name="judul_materi" PropertyName="Text" Type="String" />
+                            <asp:ControlParameter ControlID="Calendar1" Name="tanggal_input" PropertyName="SelectedDate" Type="String" />
+                            <asp:ControlParameter ControlID="jenisBahasa" Name="jenis_bahasa" PropertyName="SelectedValue" Type="String" />
+                            <asp:ControlParameter ControlID="penjelasan" Name="penjelasan_materi" PropertyName="Text" Type="String" />
+                            <asp:ControlParameter ControlID="contoh" Name="contoh_code" PropertyName="Text" Type="String" />
+                            <asp:ControlParameter ControlID="uploadgambarMateri" DefaultValue="" Name="cover_materi" PropertyName="FileBytes" Type="String" />
+                        </InsertParameters>
+                        <UpdateParameters>
+                            <asp:Parameter Name="judul_materi" Type="String" />
+                            <asp:Parameter Name="tanggal_input" Type="String" />
+                            <asp:Parameter Name="jenis_bahasa" Type="String" />
+                            <asp:Parameter Name="penjelasan_materi" Type="String" />
+                            <asp:Parameter Name="contoh_code" Type="String" />
+                            <asp:Parameter Name="cover_materi" Type="String" />
+                            <asp:Parameter Name="id_materi" Type="Int32" />
+                        </UpdateParameters>
+                    </asp:SqlDataSource>--%>
                 </form>
             </div>
         </div>
