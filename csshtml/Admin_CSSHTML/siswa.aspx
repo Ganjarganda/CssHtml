@@ -11,56 +11,57 @@
         <!-- tables -->
         <div class="agile-tables">
             <div class="w3l-table-info agile_info_shadow">
-                <!-- Search Engine -->
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Usernames..">
-                <!-- Table -->
-                <table id="myTable">
-                    <tr class="header">
-                        <th style="width: 20%;">Username</th>
-                        <th style="width: 25%;">Email</th>
-                        <th style="width: 25%;">Alamat Rumah</th>
-                        <th style="width: 20%;">Jenis Siswa</th>
-                        <th style="width: 10%;">Aksi</th>
-                    </tr>
-                    <% For i = 1 To 10 %>
-                    <tr>
-                        <td><%= i %></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <div class="btn btn-warning">
-                                <a href="form/editSiswa.aspx"><i class="fa fa-pencil-square-o"></i></a>
-                            </div>
-                            <div class="btn btn-warning">
-                                <a href="#"><i class="fa fa-trash-o"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <% Next %>
-                </table>
-                <script>
-                    function myFunction() {
-                        // Declare variables 
-                        var input, filter, table, tr, td, i;
-                        input = document.getElementById("myInput");
-                        filter = input.value.toUpperCase();
-                        table = document.getElementById("myTable");
-                        tr = table.getElementsByTagName("tr");
 
-                        // Loop through all table rows, and hide those who don't match the search query
-                        for (i = 0; i < tr.length; i++) {
-                            td = tr[i].getElementsByTagName("td")[0];
-                            if (td) {
-                                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                                    tr[i].style.display = "";
-                                } else {
-                                    tr[i].style.display = "none";
-                                }
-                            }
-                        }
-                    }
-                </script>
+                <form id="form1" runat="server">
+                    <!-- Search Engine -->
+                    <%--<asp:TextBox ID="TextBox1" runat="server" AutoPostBack="true" ></asp:TextBox>--%>
+                    <br />
+                    <!-- Table -->
+                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="username" DataSourceID="siswa">
+                        <Columns>
+                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                            <asp:BoundField DataField="username" HeaderText="Username" ReadOnly="True" SortExpression="username" />
+                            <asp:BoundField DataField="email" HeaderText="Email" SortExpression="email" />
+                            <asp:BoundField DataField="alamat" HeaderText="Alamat" SortExpression="alamat" />
+                            <asp:BoundField DataField="jenis_siswa" HeaderText="Jenis Siswa" SortExpression="jenis_siswa" />
+                        </Columns>
+                        <FooterStyle BackColor="White" ForeColor="#000066" />
+                        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                        <RowStyle ForeColor="#000066" />
+                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                        <SortedDescendingHeaderStyle BackColor="#00547E" />
+                    </asp:GridView>
+                    <asp:SqlDataSource ID="siswa" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:csshtml %>" DeleteCommand="DELETE FROM [siswa] WHERE [username] = @original_username AND (([email] = @original_email) OR ([email] IS NULL AND @original_email IS NULL)) AND (([alamat] = @original_alamat) OR ([alamat] IS NULL AND @original_alamat IS NULL)) AND (([jenis_siswa] = @original_jenis_siswa) OR ([jenis_siswa] IS NULL AND @original_jenis_siswa IS NULL))" InsertCommand="INSERT INTO [siswa] ([username], [email], [alamat], [jenis_siswa]) VALUES (@username, @email, @alamat, @jenis_siswa)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [username], [email], [alamat], [jenis_siswa] FROM [siswa] WHERE ([aktif] = @aktif)" UpdateCommand="UPDATE [siswa] SET [email] = @email, [alamat] = @alamat, [jenis_siswa] = @jenis_siswa WHERE [username] = @original_username AND (([email] = @original_email) OR ([email] IS NULL AND @original_email IS NULL)) AND (([alamat] = @original_alamat) OR ([alamat] IS NULL AND @original_alamat IS NULL)) AND (([jenis_siswa] = @original_jenis_siswa) OR ([jenis_siswa] IS NULL AND @original_jenis_siswa IS NULL))">
+                        <DeleteParameters>
+                            <asp:Parameter Name="original_username" Type="String" />
+                            <asp:Parameter Name="original_email" Type="String" />
+                            <asp:Parameter Name="original_alamat" Type="String" />
+                            <asp:Parameter Name="original_jenis_siswa" Type="String" />
+                        </DeleteParameters>
+                        <InsertParameters>
+                            <asp:Parameter Name="username" Type="String" />
+                            <asp:Parameter Name="email" Type="String" />
+                            <asp:Parameter Name="alamat" Type="String" />
+                            <asp:Parameter Name="jenis_siswa" Type="String" />
+                        </InsertParameters>
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="1" Name="aktif" Type="Int32" />
+                        </SelectParameters>
+                        <UpdateParameters>
+                            <asp:Parameter Name="email" Type="String" />
+                            <asp:Parameter Name="alamat" Type="String" />
+                            <asp:Parameter Name="jenis_siswa" Type="String" />
+                            <asp:Parameter Name="original_username" Type="String" />
+                            <asp:Parameter Name="original_email" Type="String" />
+                            <asp:Parameter Name="original_alamat" Type="String" />
+                            <asp:Parameter Name="original_jenis_siswa" Type="String" />
+                        </UpdateParameters>
+                    </asp:SqlDataSource>
+                </form>
             </div>
         </div>
     </div>
