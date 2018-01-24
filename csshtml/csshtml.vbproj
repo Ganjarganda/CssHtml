@@ -293,6 +293,7 @@
     <Content Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
+    <Content Include="Admin_CSSHTML\Handler1.ashx" />
     <None Include="DataSet1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -390,6 +391,9 @@
     <Compile Include="Admin_CSSHTML\form\tambahMateri.aspx.vb">
       <DependentUpon>tambahMateri.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin_CSSHTML\Handler1.ashx.vb">
+      <DependentUpon>Handler1.ashx</DependentUpon>
     </Compile>
     <Compile Include="Admin_CSSHTML\index.aspx.designer.vb">
       <DependentUpon>index.aspx</DependentUpon>

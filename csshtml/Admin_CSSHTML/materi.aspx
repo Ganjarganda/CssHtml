@@ -20,72 +20,49 @@
                 </div>
 
                 <form id="form1" runat="server">
-                <!-- Search Engine -->
-                
-               <%-- <input type="text" id="myInput" placeholder="Search for Judul..">--%>
-                    <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="true" ></asp:TextBox>
+                    <!-- Search Engine -->
+
+                    <%-- <input type="text" id="myInput" placeholder="Search for Judul..">--%>
+                   <%-- <asp:TextBox ID="TextBox1" runat="server" AutoPostBack="true"></asp:TextBox>--%>
                     <br />
-                    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="id_materi" DataSourceID="SqlDataSource1">
+                    <br />
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id_materi" DataSourceID="SqlDataSource1" Width="703px" AllowPaging="True">
                         <Columns>
-                            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                            <asp:BoundField DataField="judul_materi" HeaderText="Judul" SortExpression="judul_materi" />
-                            <asp:BoundField DataField="tanggal_input" HeaderText="Tanggal" SortExpression="tanggal_input" />
-                            <asp:BoundField DataField="jenis_bahasa" HeaderText="Bahasa" SortExpression="jenis_bahasa" />
-                            <asp:BoundField DataField="penjelasan_materi" HeaderText="Penjelasan" SortExpression="penjelasan_materi" />
-                            <asp:BoundField DataField="contoh_code" HeaderText="Contoh" SortExpression="contoh_code" />
-                            <asp:BoundField DataField="cover_materi" HeaderText="Cover" SortExpression="cover_materi" />
-                        </Columns>
-                        <FooterStyle BackColor="White" ForeColor="#000066" />
-                        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                        <RowStyle ForeColor="#000066" />
-                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                        <SortedAscendingHeaderStyle BackColor="#007DBB" />
-                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                        <SortedDescendingHeaderStyle BackColor="#00547E" />
+                            <asp:BoundField DataField="id_materi" HeaderText="id_gambar" InsertVisible="false" ReadOnly="true" SortExpression="id_materi" />
+                            <asp:BoundField DataField="judul_materi" HeaderText="nama_gambar" SortExpression="nama_gambar" />
+                            <asp:BoundField DataField="tanggal_input" HeaderText="tanggal_input" SortExpression="tanggal_input" />
+                            <asp:BoundField DataField="jenis_bahasa" HeaderText="jenis_bahasa" SortExpression="jenis_bahasa" />
+                            <asp:BoundField DataField="penjelasan_materi" HeaderText="penjelasan_materi" SortExpression="penjelasan_materi" />
+                            <asp:BoundField DataField="contoh_code" HeaderText="contoh_code" SortExpression="contoh_code" />
+                            <asp:TemplateField HeaderText="cover_materi" ControlStyle-Width="250px" ControlStyle-Height="250px">
+                                <ItemTemplate>
+                                   <asp:Image ID="image1" runat="server"
+                                       ImageUrl='<%#Eval("id_materi", "Handler1.ashx?id_materi={0}") %>'/>
+
+                                   
+                                </ItemTemplate>
+                                <ControlStyle Height="250px" Width="250px" />
+                            </asp:TemplateField>
+                                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                                </Columns>
                     </asp:GridView>
-                    
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:csshtml %>" DeleteCommand="DELETE FROM [materi] WHERE [id_materi] = @original_id_materi AND (([judul_materi] = @original_judul_materi) OR ([judul_materi] IS NULL AND @original_judul_materi IS NULL)) AND (([tanggal_input] = @original_tanggal_input) OR ([tanggal_input] IS NULL AND @original_tanggal_input IS NULL)) AND (([jenis_bahasa] = @original_jenis_bahasa) OR ([jenis_bahasa] IS NULL AND @original_jenis_bahasa IS NULL)) AND (([penjelasan_materi] = @original_penjelasan_materi) OR ([penjelasan_materi] IS NULL AND @original_penjelasan_materi IS NULL)) AND (([contoh_code] = @original_contoh_code) OR ([contoh_code] IS NULL AND @original_contoh_code IS NULL)) AND (([cover_materi] = @original_cover_materi) OR ([cover_materi] IS NULL AND @original_cover_materi IS NULL))" InsertCommand="INSERT INTO [materi] ([judul_materi], [tanggal_input], [jenis_bahasa], [penjelasan_materi], [contoh_code], [cover_materi]) VALUES (@judul_materi, @tanggal_input, @jenis_bahasa, @penjelasan_materi, @contoh_code, @cover_materi)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [materi] WHERE ([judul_materi] LIKE '%' + @judul_materi + '%')" UpdateCommand="UPDATE [materi] SET [judul_materi] = @judul_materi, [tanggal_input] = @tanggal_input, [jenis_bahasa] = @jenis_bahasa, [penjelasan_materi] = @penjelasan_materi, [contoh_code] = @contoh_code, [cover_materi] = @cover_materi WHERE [id_materi] = @original_id_materi AND (([judul_materi] = @original_judul_materi) OR ([judul_materi] IS NULL AND @original_judul_materi IS NULL)) AND (([tanggal_input] = @original_tanggal_input) OR ([tanggal_input] IS NULL AND @original_tanggal_input IS NULL)) AND (([jenis_bahasa] = @original_jenis_bahasa) OR ([jenis_bahasa] IS NULL AND @original_jenis_bahasa IS NULL)) AND (([penjelasan_materi] = @original_penjelasan_materi) OR ([penjelasan_materi] IS NULL AND @original_penjelasan_materi IS NULL)) AND (([contoh_code] = @original_contoh_code) OR ([contoh_code] IS NULL AND @original_contoh_code IS NULL)) AND (([cover_materi] = @original_cover_materi) OR ([cover_materi] IS NULL AND @original_cover_materi IS NULL))">
+
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Semester 5\Prak. PWeb 2\Project PWeb2\Program WEB Project PWEB 2\csshtml\csshtml\App_Data\csshtml.mdf;Integrated Security=True" DeleteCommand="DELETE FROM [materi] where [id_materi] = @id_materi" ProviderName="System.Data.SqlClient" SelectCommand="SELECT * FROM [materi]" UpdateCommand="UPDATE [materi] SET [judul_materi] = @judul_materi, [tanggal_input]= @tanggal_input, [jenis_bahasa]= @jenis_bahasa, [penjelasan_materi]= @penjelasan_materi, [contoh_code]= @contoh_code, [cover_materi]= @cover_materi WHERE [id_materi]= @id_materi">
                         <DeleteParameters>
-                            <asp:Parameter Name="original_id_materi" Type="Int32" />
-                            <asp:Parameter Name="original_judul_materi" Type="String" />
-                            <asp:Parameter Name="original_tanggal_input" Type="String" />
-                            <asp:Parameter Name="original_jenis_bahasa" Type="String" />
-                            <asp:Parameter Name="original_penjelasan_materi" Type="String" />
-                            <asp:Parameter Name="original_contoh_code" Type="String" />
-                            <asp:Parameter Name="original_cover_materi" Type="String" />
-                        </DeleteParameters>
-                        <InsertParameters>
-                            <asp:Parameter Name="judul_materi" Type="String" />
-                            <asp:Parameter Name="tanggal_input" Type="String" />
-                            <asp:Parameter Name="jenis_bahasa" Type="String" />
-                            <asp:Parameter Name="penjelasan_materi" Type="String" />
-                            <asp:Parameter Name="contoh_code" Type="String" />
-                            <asp:Parameter Name="cover_materi" Type="String" />
-                        </InsertParameters>
-                        <SelectParameters>
-                            <asp:ControlParameter ControlID="TextBox1" DefaultValue="a" Name="judul_materi" PropertyName="Text" Type="String" />
-                        </SelectParameters>
+                            <asp:Parameter Name="id_materi" Type="Int32" />
+                        </DeleteParameters> 
                         <UpdateParameters>
                             <asp:Parameter Name="judul_materi" Type="String" />
                             <asp:Parameter Name="tanggal_input" Type="String" />
                             <asp:Parameter Name="jenis_bahasa" Type="String" />
                             <asp:Parameter Name="penjelasan_materi" Type="String" />
                             <asp:Parameter Name="contoh_code" Type="String" />
-                            <asp:Parameter Name="cover_materi" Type="String" />
-                            <asp:Parameter Name="original_id_materi" Type="Int32" />
-                            <asp:Parameter Name="original_judul_materi" Type="String" />
-                            <asp:Parameter Name="original_tanggal_input" Type="String" />
-                            <asp:Parameter Name="original_jenis_bahasa" Type="String" />
-                            <asp:Parameter Name="original_penjelasan_materi" Type="String" />
-                            <asp:Parameter Name="original_contoh_code" Type="String" />
-                            <asp:Parameter Name="original_cover_materi" Type="String" />
+                            <asp:Parameter Name="cover_materi" Type="object" />
+                            <asp:Parameter Name="id_materi" Type="Int32" />
                         </UpdateParameters>
                     </asp:SqlDataSource>
-                    
-                <!-- Table -->
-                <%--<table id="myTable">
+                    <br />
+                    <%--<table id="myTable">
                     <tr class="header">
                         <th style="width: 10%;">ID Materi</th>
                         <th style="width: 15%;">Jenis</th>
@@ -112,7 +89,7 @@
                     </tr>
                     <% Next %>
                 </table>--%>
-                <%--<script>
+                    <%--<script>
                     function myFunction() {
                         // Declare variables 
                         var input, filter, table, tr, td, i;
@@ -134,7 +111,7 @@
                         }
                     }
                 </script>--%>
-                    </form>
+                </form>
             </div>
         </div>
     </div>
